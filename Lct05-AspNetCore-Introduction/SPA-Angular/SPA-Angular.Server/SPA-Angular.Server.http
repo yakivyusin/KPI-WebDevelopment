@@ -1,0 +1,6 @@
+@SPA_Angular.Server_HostAddress = http://localhost:5108
+
+GET {{SPA_Angular.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
