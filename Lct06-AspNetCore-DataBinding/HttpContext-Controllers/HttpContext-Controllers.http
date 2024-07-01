@@ -1,0 +1,28 @@
+@HttpContext_Controllers_HostAddress = http://localhost:5053
+
+GET {{HttpContext_Controllers_HostAddress}}/w1?count=3
+Accept: application/json
+
+###
+
+GET {{HttpContext_Controllers_HostAddress}}/w2
+Accept: application/json
+Count: 10
+
+###
+
+POST {{HttpContext_Controllers_HostAddress}}/w3
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -20}
+
+###
+
+POST {{HttpContext_Controllers_HostAddress}}/w4
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+
+date=2024-06-01&temp=20
+
+###

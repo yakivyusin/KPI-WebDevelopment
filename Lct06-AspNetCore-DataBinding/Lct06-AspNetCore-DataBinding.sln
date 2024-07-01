@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpContext-Minimal", "HttpContext-Minimal\HttpContext-Minimal.csproj", "{35B22B49-EAE1-4FC2-A9F9-A3C68E38AE8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common-WeatherForecast", "Common-WeatherForecast\Common-WeatherForecast.csproj", "{F3EC56C5-9602-42C8-899B-C60390E32A15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpContext-Controllers", "HttpContext-Controllers\HttpContext-Controllers.csproj", "{3AC83A5C-F28D-4FEE-B973-4617D2A8A5F5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35B22B49-EAE1-4FC2-A9F9-A3C68E38AE8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B22B49-EAE1-4FC2-A9F9-A3C68E38AE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B22B49-EAE1-4FC2-A9F9-A3C68E38AE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B22B49-EAE1-4FC2-A9F9-A3C68E38AE8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EC56C5-9602-42C8-899B-C60390E32A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EC56C5-9602-42C8-899B-C60390E32A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EC56C5-9602-42C8-899B-C60390E32A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EC56C5-9602-42C8-899B-C60390E32A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AC83A5C-F28D-4FEE-B973-4617D2A8A5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC83A5C-F28D-4FEE-B973-4617D2A8A5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC83A5C-F28D-4FEE-B973-4617D2A8A5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC83A5C-F28D-4FEE-B973-4617D2A8A5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
