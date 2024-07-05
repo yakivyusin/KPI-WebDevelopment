@@ -27,20 +27,26 @@ namespace HttpContext_Minimal
 
             app.MapPost("/w3", async (HttpRequest request) =>
             {
+#if true
                 using var reader = new StreamReader(request.Body);
                 var body = await reader.ReadToEndAsync();
 
                 var data = JsonSerializer.Deserialize<WeatherForecast>(body);
+#else
+                var data = await request.ReadFromJsonAsync<WeatherForecast>();
+#endif
 
                 return Results.Created("/w1", data);
             });
 
-            app.MapPost("/w4", (HttpRequest request) =>
+            app.MapPost("/w4", async (HttpRequest request) =>
             {
+                var form = await request.ReadFormAsync();
+
                 var data = new WeatherForecast
                 {
-                    Date = DateOnly.Parse(request.Form["date"].ToString()),
-                    TemperatureC = int.Parse(request.Form["temp"].ToString())
+                    Date = DateOnly.Parse(form["date"].ToString()),
+                    TemperatureC = int.Parse(form["temp"].ToString())
                 };
 
                 return Results.Created("/w1", data);

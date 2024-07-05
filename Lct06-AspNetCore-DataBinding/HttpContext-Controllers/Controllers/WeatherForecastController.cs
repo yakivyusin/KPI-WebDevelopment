@@ -27,21 +27,27 @@ namespace HttpContext_Controllers.Controllers
         [HttpPost("/w3")]
         public async Task<IActionResult> PostBody()
         {
+#if true
             using var reader = new StreamReader(Request.Body);
             var body = await reader.ReadToEndAsync();
 
             var data = JsonSerializer.Deserialize<WeatherForecast>(body);
+#else
+            var data = await Request.ReadFromJsonAsync<WeatherForecast>();
+#endif
 
             return Created("/w1", data);
         }
 
         [HttpPost("/w4")]
-        public IActionResult PostForm()
+        public async Task<IActionResult> PostForm()
         {
+            var form = await Request.ReadFormAsync();
+
             var data = new WeatherForecast
             {
-                Date = DateOnly.Parse(Request.Form["date"].ToString()),
-                TemperatureC = int.Parse(Request.Form["temp"].ToString())
+                Date = DateOnly.Parse(form["date"].ToString()),
+                TemperatureC = int.Parse(form["temp"].ToString())
             };
 
             return Created("/w1", data);
