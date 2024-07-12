@@ -1,0 +1,46 @@
+@DataBinding_Minimal_HostAddress = http://localhost:5240
+
+GET {{DataBinding_Minimal_HostAddress}}/w1?count=3
+Accept: application/json
+
+###
+
+GET {{DataBinding_Minimal_HostAddress}}/w2
+Accept: application/json
+Count: 10
+
+###
+
+POST {{DataBinding_Minimal_HostAddress}}/w3
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -20}
+
+###
+
+POST {{DataBinding_Minimal_HostAddress}}/w4
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+
+date=2024-06-01&temperatureC=20
+
+###
+
+GET {{DataBinding_Minimal_HostAddress}}/w2-1
+Accept: application/json
+X-Count: 15
+
+###
+
+GET {{DataBinding_Minimal_HostAddress}}/w5?data=10&data=5
+# GET {{DataBinding_Minimal_HostAddress}}/w5?data[0]=10&data[1]=5
+Accept: application/json
+
+###
+
+GET {{DataBinding_Minimal_HostAddress}}/w8?page=2
+Accept: application/json
+Page-Size: 10
+
+###

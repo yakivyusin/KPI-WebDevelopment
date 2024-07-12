@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common-WeatherForecast", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpContext-Controllers", "HttpContext-Controllers\HttpContext-Controllers.csproj", "{3AC83A5C-F28D-4FEE-B973-4617D2A8A5F5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBinding-Controllers", "DataBinding-Controllers\DataBinding-Controllers.csproj", "{DCDA07B4-1244-4EB6-BB50-6AEA2D561561}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBinding-Minimal", "DataBinding-Minimal\DataBinding-Minimal.csproj", "{C145E7E3-D523-42AF-A57E-226AA5950DC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{3AC83A5C-F28D-4FEE-B973-4617D2A8A5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AC83A5C-F28D-4FEE-B973-4617D2A8A5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AC83A5C-F28D-4FEE-B973-4617D2A8A5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCDA07B4-1244-4EB6-BB50-6AEA2D561561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDA07B4-1244-4EB6-BB50-6AEA2D561561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDA07B4-1244-4EB6-BB50-6AEA2D561561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDA07B4-1244-4EB6-BB50-6AEA2D561561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C145E7E3-D523-42AF-A57E-226AA5950DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C145E7E3-D523-42AF-A57E-226AA5950DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C145E7E3-D523-42AF-A57E-226AA5950DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C145E7E3-D523-42AF-A57E-226AA5950DC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
