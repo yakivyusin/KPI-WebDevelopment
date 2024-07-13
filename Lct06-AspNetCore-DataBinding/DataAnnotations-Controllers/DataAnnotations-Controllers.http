@@ -1,0 +1,41 @@
+@DataAnnotations_Controllers_HostAddress = http://localhost:5116
+
+POST {{DataAnnotations_Controllers_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -20}
+
+###
+
+POST {{DataAnnotations_Controllers_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -200}
+
+###
+
+POST {{DataAnnotations_Controllers_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+
+{"TemperatureC": -20}
+
+###
+
+POST {{DataAnnotations_Controllers_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -20, "Summary": "12345678901"}
+
+###
+
+POST {{DataAnnotations_Controllers_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -20, "Summary": "qwerty"}
+
+###
