@@ -1,0 +1,41 @@
+@FluentValidation_Controllers_HostAddress = http://localhost:5210
+
+POST {{FluentValidation_Controllers_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -20}
+
+###
+
+POST {{FluentValidation_Controllers_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -200}
+
+###
+
+POST {{FluentValidation_Controllers_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+
+{"TemperatureC": -20}
+
+###
+
+POST {{FluentValidation_Controllers_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -20, "Summary": "12345678901"}
+
+###
+
+POST {{FluentValidation_Controllers_HostAddress}}/weatherforecast
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -20, "Summary": "qwerty"}
+
+###
