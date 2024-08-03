@@ -7,10 +7,12 @@
 
         static WeatherForecastStorage()
         {
-            Data.AddRange(Enumerable.Range(1, 5)
+            var now = DateTime.UtcNow;
+
+            Data.AddRange(Enumerable.Range(1, DateTime.DaysInMonth(now.Year, now.Month))
                 .Select(index => new WeatherForecast
                 {
-                    Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                    Date = new(now.Year, now.Month, index),
                     TemperatureC = Random.Shared.Next(-20, 55),
                     Summary = Summaries[Random.Shared.Next(Summaries.Length)]
                 }));

@@ -1,0 +1,51 @@
+@Routing_Controllers_HostAddress = http://localhost:5091
+
+GET {{Routing_Controllers_HostAddress}}/api/weatherforecast
+Accept: application/json
+
+###
+
+GET {{Routing_Controllers_HostAddress}}/api/weather/get
+Accept: application/json
+
+###
+
+GET {{Routing_Controllers_HostAddress}}/api/weather
+Accept: application/json
+
+###
+
+GET {{Routing_Controllers_HostAddress}}/api/weather/get1
+Accept: application/json
+
+###
+
+POST {{Routing_Controllers_HostAddress}}/api/weather/get
+Accept: application/json
+
+###
+
+GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2024-09-01
+Accept: application/json
+
+###
+
+GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2024/9/1
+Accept: application/json
+
+###
+
+GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2024/9
+Accept: application/json
+
+###
+
+GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/catch-all/test/test2
+Accept: application/json
+
+###
+
+GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2024/abc/1
+Accept: application/json
+
+###

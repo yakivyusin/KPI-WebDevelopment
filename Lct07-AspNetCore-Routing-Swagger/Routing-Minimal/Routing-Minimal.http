@@ -1,0 +1,31 @@
+@Routing_Minimal_HostAddress = http://localhost:5190
+
+GET {{Routing_Minimal_HostAddress}}/api/weatherforecast
+Accept: application/json
+
+###
+
+GET {{Routing_Minimal_HostAddress}}/api/weatherforecast/2024-09-01
+Accept: application/json
+
+###
+
+GET {{Routing_Minimal_HostAddress}}/api/weatherforecast/2024/9/1
+Accept: application/json
+
+###
+
+GET {{Routing_Minimal_HostAddress}}/api/weatherforecast/2024/9
+Accept: application/json
+
+###
+
+GET {{Routing_Minimal_HostAddress}}/api/weatherforecast/catch-all/test/test2
+Accept: application/json
+
+###
+
+GET {{Routing_Minimal_HostAddress}}/api/weatherforecast/2024/abc/1
+Accept: application/json
+
+###
