@@ -1,18 +1,17 @@
-namespace Routing_Controllers
+﻿namespace Routing_Controllers;
+
+public class Program
 {
-    public class Program
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
-            var builder = WebApplication.CreateBuilder(args);
+        var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddControllers();
+        builder.Services.AddControllers();
 
-            var app = builder.Build();
+        var app = builder.Build();
 
-            app.MapControllers();
+        app.MapControllers();
 
-            app.Run();
-        }
+        app.Run();
     }
 }
