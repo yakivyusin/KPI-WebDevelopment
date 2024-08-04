@@ -44,7 +44,7 @@ internal class Program
         Console.WriteLine("Breakfast is ready!");
     }
 
-    static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
+    private static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
     {
         var toast = await ToastBreadAsync(number);
         ApplyButter(toast);
