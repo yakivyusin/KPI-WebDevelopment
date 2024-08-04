@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cancellation-Timeout", "Can
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cancellation-Manual", "Cancellation-Manual\Cancellation-Manual.csproj", "{5BF016B1-C2BB-4354-924C-2B3A35BCBF6F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncStreams", "AsyncStreams\AsyncStreams.csproj", "{9C1936B3-3E88-4310-862F-68370CFA92EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5BF016B1-C2BB-4354-924C-2B3A35BCBF6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BF016B1-C2BB-4354-924C-2B3A35BCBF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BF016B1-C2BB-4354-924C-2B3A35BCBF6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C1936B3-3E88-4310-862F-68370CFA92EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C1936B3-3E88-4310-862F-68370CFA92EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C1936B3-3E88-4310-862F-68370CFA92EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C1936B3-3E88-4310-862F-68370CFA92EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
