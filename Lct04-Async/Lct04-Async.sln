@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cancellation-Manual", "Canc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncStreams", "AsyncStreams\AsyncStreams.csproj", "{9C1936B3-3E88-4310-862F-68370CFA92EA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks-NoAwait", "Tasks-NoAwait\Tasks-NoAwait.csproj", "{D37D1756-4C6E-4357-9EE5-C4F931816A8E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks-Await", "Tasks-Await\Tasks-Await.csproj", "{07CFA711-AC7E-4910-AF22-9665AA20EEBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{9C1936B3-3E88-4310-862F-68370CFA92EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C1936B3-3E88-4310-862F-68370CFA92EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C1936B3-3E88-4310-862F-68370CFA92EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D37D1756-4C6E-4357-9EE5-C4F931816A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D37D1756-4C6E-4357-9EE5-C4F931816A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D37D1756-4C6E-4357-9EE5-C4F931816A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D37D1756-4C6E-4357-9EE5-C4F931816A8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07CFA711-AC7E-4910-AF22-9665AA20EEBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07CFA711-AC7E-4910-AF22-9665AA20EEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07CFA711-AC7E-4910-AF22-9665AA20EEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07CFA711-AC7E-4910-AF22-9665AA20EEBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
