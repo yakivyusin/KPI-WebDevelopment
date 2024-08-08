@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks-NoAwait", "Tasks-NoAw
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks-Await", "Tasks-Await\Tasks-Await.csproj", "{07CFA711-AC7E-4910-AF22-9665AA20EEBA}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "JS-Promises", "JS-Promises\JS-Promises.esproj", "{695EB8D4-94B3-47C1-91E0-447DEFB437AB}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "JS-Await", "JS-Await\JS-Await.esproj", "{695EB8D4-94B3-47C1-91E0-447DEFB437CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,18 @@ Global
 		{07CFA711-AC7E-4910-AF22-9665AA20EEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07CFA711-AC7E-4910-AF22-9665AA20EEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07CFA711-AC7E-4910-AF22-9665AA20EEBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437AB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437AB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437CD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695EB8D4-94B3-47C1-91E0-447DEFB437CD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
