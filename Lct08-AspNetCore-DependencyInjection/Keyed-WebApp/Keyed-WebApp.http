@@ -1,0 +1,6 @@
+﻿@Keyed_WebApp_HostAddress = http://localhost:5054
+
+GET {{Keyed_WebApp_HostAddress}}/service/
+Accept: application/json
+
+###
