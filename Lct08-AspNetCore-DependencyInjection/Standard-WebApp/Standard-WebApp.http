@@ -1,0 +1,6 @@
+﻿@Standard_WebApp_HostAddress = http://localhost:5129
+
+GET {{Standard_WebApp_HostAddress}}/api/weather/
+Accept: application/json
+
+###

@@ -1,0 +1,6 @@
+﻿@Standard_LifeCyclePlayground_HostAddress = http://localhost:5152
+
+GET {{Standard_LifeCyclePlayground_HostAddress}}/play/
+Accept: application/json
+
+###

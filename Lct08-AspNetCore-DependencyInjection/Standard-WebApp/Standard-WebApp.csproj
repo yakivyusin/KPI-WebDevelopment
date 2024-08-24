@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Standard_WebApp</RootNamespace>
+    <Configurations>Release;Debug-BP;Debug-Simple</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(Configuration) == 'Debug-BP'">
+    <DefineConstants>$(DefineConstants);BEST_PRACTICE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common-WeatherForecast-BP\Common-WeatherForecast-BP.csproj" Condition="$(Configuration) == 'Debug-BP'" />
+    <ProjectReference Include="..\Common-WeatherForecast-Simple\Common-WeatherForecast-Simple.csproj" Condition="$(Configuration) == 'Debug-Simple'" />
+  </ItemGroup>
+
+</Project>
