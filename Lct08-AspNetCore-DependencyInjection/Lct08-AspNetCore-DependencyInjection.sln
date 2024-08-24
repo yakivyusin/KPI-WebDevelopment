@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Standard-WebApp", "Standard
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Standard-LifeCyclePlayground", "Standard-LifeCyclePlayground\Standard-LifeCyclePlayground.csproj", "{F5D65A46-D575-4AA5-AD8E-409F6C229644}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autofac-WebApp", "Autofac-WebApp\Autofac-WebApp.csproj", "{33A34395-C5A5-4A0B-818E-FA0CF8E93D00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug-BP|Any CPU = Debug-BP|Any CPU
@@ -42,6 +44,12 @@ Global
 		{F5D65A46-D575-4AA5-AD8E-409F6C229644}.Debug-Simple|Any CPU.Build.0 = Debug|Any CPU
 		{F5D65A46-D575-4AA5-AD8E-409F6C229644}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5D65A46-D575-4AA5-AD8E-409F6C229644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A34395-C5A5-4A0B-818E-FA0CF8E93D00}.Debug-BP|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A34395-C5A5-4A0B-818E-FA0CF8E93D00}.Debug-BP|Any CPU.Build.0 = Debug|Any CPU
+		{33A34395-C5A5-4A0B-818E-FA0CF8E93D00}.Debug-Simple|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A34395-C5A5-4A0B-818E-FA0CF8E93D00}.Debug-Simple|Any CPU.Build.0 = Debug|Any CPU
+		{33A34395-C5A5-4A0B-818E-FA0CF8E93D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A34395-C5A5-4A0B-818E-FA0CF8E93D00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
