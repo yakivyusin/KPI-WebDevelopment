@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance-TPH", "Inheritance-TPH\Inheritance-TPH.csproj", "{34011556-25BD-4C55-9A0D-4746DA9ED67D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance-TPT", "Inheritance-TPT\Inheritance-TPT.csproj", "{CD028CC7-819F-42CB-958A-A718F5DA9790}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance-TPC", "Inheritance-TPC\Inheritance-TPC.csproj", "{BFB3BFFD-BAA4-4D9D-BA00-033057176D99}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34011556-25BD-4C55-9A0D-4746DA9ED67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34011556-25BD-4C55-9A0D-4746DA9ED67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34011556-25BD-4C55-9A0D-4746DA9ED67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34011556-25BD-4C55-9A0D-4746DA9ED67D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD028CC7-819F-42CB-958A-A718F5DA9790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD028CC7-819F-42CB-958A-A718F5DA9790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD028CC7-819F-42CB-958A-A718F5DA9790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD028CC7-819F-42CB-958A-A718F5DA9790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB3BFFD-BAA4-4D9D-BA00-033057176D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB3BFFD-BAA4-4D9D-BA00-033057176D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB3BFFD-BAA4-4D9D-BA00-033057176D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB3BFFD-BAA4-4D9D-BA00-033057176D99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
