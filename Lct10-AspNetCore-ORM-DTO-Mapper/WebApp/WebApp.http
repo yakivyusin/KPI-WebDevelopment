@@ -1,0 +1,22 @@
+﻿@WebApp_HostAddress = http://localhost:5237
+
+GET {{WebApp_HostAddress}}/api/weather/
+Accept: application/json
+
+###
+
+GET {{WebApp_HostAddress}}/api/weather/1
+Accept: application/json
+
+###
+
+GET {{WebApp_HostAddress}}/api/weather/Kyiv/2024-09-02
+Accept: application/json
+
+###
+
+POST {{WebApp_HostAddress}}/api/weather
+Content-Type: application/json
+Accept: application/json
+
+{ "date": "2024-09-03", "temperatureC": 20, "cityId": 1}
