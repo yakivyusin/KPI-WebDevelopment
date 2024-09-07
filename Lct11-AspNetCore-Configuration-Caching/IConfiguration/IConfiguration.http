@@ -1,0 +1,41 @@
+﻿@IConfiguration_HostAddress = http://localhost:5276
+
+GET {{IConfiguration_HostAddress}}/configuration/providers
+Accept: application/json
+
+###
+
+GET {{IConfiguration_HostAddress}}/configuration/all
+Accept: application/json
+
+###
+
+GET {{IConfiguration_HostAddress}}/configuration/MySection:MySubsection:KeyA
+Accept: application/json
+
+###
+
+GET {{IConfiguration_HostAddress}}/configuration/MySection:MySubsection:KeyD
+Accept: application/json
+
+###
+
+GET {{IConfiguration_HostAddress}}/configuration/MySection:KeyC
+Accept: application/json
+
+###
+
+GET {{IConfiguration_HostAddress}}/configuration/keyD
+Accept: application/json
+
+###
+
+GET {{IConfiguration_HostAddress}}/configuration/Environment
+Accept: application/json
+
+###
+
+GET {{IConfiguration_HostAddress}}/configuration/MySection:MySubsection:KeyE
+Accept: application/json
+
+###
