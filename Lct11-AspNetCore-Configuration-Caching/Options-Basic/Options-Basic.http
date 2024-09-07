@@ -1,0 +1,6 @@
+﻿@Options_Basic_HostAddress = http://localhost:5151
+
+GET {{Options_Basic_HostAddress}}/options
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+﻿@Options_Extra_HostAddress = http://localhost:5244
+
+GET {{Options_Extra_HostAddress}}/options/section
+Accept: application/json
+
+###
+
+GET {{Options_Extra_HostAddress}}/options/subsection
+Accept: application/json
+
+###
