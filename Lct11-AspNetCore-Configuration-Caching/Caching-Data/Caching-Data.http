@@ -1,0 +1,11 @@
+﻿@Caching_Data_HostAddress = http://localhost:5170
+
+GET {{Caching_Data_HostAddress}}/weatherforecast/memory
+Accept: application/json
+
+###
+
+GET {{Caching_Data_HostAddress}}/weatherforecast/distributed
+Accept: application/json
+
+###
