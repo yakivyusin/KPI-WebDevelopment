@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Options-Extra", "Options-Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caching-Data", "Caching-Data\Caching-Data.csproj", "{EF0F90D6-B204-4B12-913D-BC99455F92EB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caching-Response", "Caching-Response\Caching-Response.csproj", "{741788A0-06C8-45B2-9D6F-7A31EB37E0A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caching-Output", "Caching-Output\Caching-Output.csproj", "{8D398E9C-EB4A-4FC5-AF20-156ED9F13710}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{EF0F90D6-B204-4B12-913D-BC99455F92EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF0F90D6-B204-4B12-913D-BC99455F92EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF0F90D6-B204-4B12-913D-BC99455F92EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{741788A0-06C8-45B2-9D6F-7A31EB37E0A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{741788A0-06C8-45B2-9D6F-7A31EB37E0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{741788A0-06C8-45B2-9D6F-7A31EB37E0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{741788A0-06C8-45B2-9D6F-7A31EB37E0A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D398E9C-EB4A-4FC5-AF20-156ED9F13710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D398E9C-EB4A-4FC5-AF20-156ED9F13710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D398E9C-EB4A-4FC5-AF20-156ED9F13710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D398E9C-EB4A-4FC5-AF20-156ED9F13710}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

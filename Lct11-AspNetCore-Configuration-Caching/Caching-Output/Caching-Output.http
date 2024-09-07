@@ -1,0 +1,12 @@
+﻿@Caching_Output_HostAddress = http://localhost:5158
+
+GET {{Caching_Output_HostAddress}}/weatherforecast?count=10
+Accept: application/json
+
+###
+
+GET {{Caching_Output_HostAddress}}/weatherforecast?count=10
+Accept: application/json
+Cache-Control: no-store
+
+###
