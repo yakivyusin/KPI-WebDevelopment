@@ -1,0 +1,56 @@
+﻿@Identity_WebApp_HostAddress = http://localhost:5137
+@Email = test@test.com
+@BadPassword = qwerty123456
+@GoodPassword = qwerty123456!
+
+GET {{Identity_WebApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{Identity_WebApp_HostAddress}}/account/register/
+Content-Type: application/json
+
+{
+    "email": "{{Email}}",
+    "password": "{{BadPassword}}"
+}
+
+###
+
+POST {{Identity_WebApp_HostAddress}}/account/register/
+Content-Type: application/json
+
+{
+    "email": "{{Email}}",
+    "password": "{{GoodPassword}}"
+}
+
+###
+
+POST {{Identity_WebApp_HostAddress}}/account/login?useCookies=false
+Content-Type: application/json
+
+{
+    "email": "{{Email}}",
+    "password": "{{GoodPassword}}"
+}
+
+###
+
+@AccessToken = copy_from_response
+
+GET {{Identity_WebApp_HostAddress}}/weatherforecast/
+Authorization: Bearer {{AccessToken}}
+
+###
+
+POST {{Identity_WebApp_HostAddress}}/account/manage/age
+Authorization: Bearer {{AccessToken}}
+Content-Type: application/json
+
+{
+    "newAge": 18
+}
+
+###
