@@ -1,0 +1,50 @@
+﻿@Auth_JWT_HostAddress = http://localhost:5034
+@AuthenticationGroup = {{Auth_JWT_HostAddress}}/authentication
+@WeatherForecastGroup = {{Auth_JWT_HostAddress}}/weatherforecast
+
+GET {{AuthenticationGroup}}/login?username=user&role=admin&city=Kyiv
+Accept: application/json
+
+###
+
+@Token = copy_from_response
+
+GET {{AuthenticationGroup}}/me
+
+###
+
+GET {{AuthenticationGroup}}/me
+Authorization: Bearer {{Token}}
+
+###
+
+GET {{AuthenticationGroup}}/login?username=user&role=admin&city=Kyiv&audience=wrong
+Accept: application/json
+
+###
+
+@BadToken = copy_from_response
+
+GET {{AuthenticationGroup}}/me
+Authorization: Bearer {{BadToken}}
+
+###
+
+GET {{WeatherForecastGroup}}/auth
+
+###
+
+GET {{WeatherForecastGroup}}/auth
+Authorization: Bearer {{Token}}
+
+###
+
+GET {{WeatherForecastGroup}}/admin
+Authorization: Bearer {{Token}}
+
+###
+
+GET {{WeatherForecastGroup}}/kyiv
+Authorization: Bearer {{Token}}
+
+###

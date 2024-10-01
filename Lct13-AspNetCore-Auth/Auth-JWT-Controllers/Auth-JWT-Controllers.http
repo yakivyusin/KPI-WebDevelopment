@@ -1,0 +1,50 @@
+﻿@Auth_JWT_HostAddress = http://localhost:5051
+@AuthenticationController = {{Auth_JWT_HostAddress}}/authentication
+@WeatherForecastController = {{Auth_JWT_HostAddress}}/weatherforecast
+
+GET {{AuthenticationController}}/login?username=user&role=admin&claims[city]=Kyiv
+Accept: application/json
+
+###
+
+@Token = copy_from_response
+
+GET {{AuthenticationController}}/me
+
+###
+
+GET {{AuthenticationController}}/me
+Authorization: Bearer {{Token}}
+
+###
+
+GET {{AuthenticationController}}/login?username=user&role=admin&claims[city]=Kyiv&audience=wrong
+Accept: application/json
+
+###
+
+@BadToken = copy_from_response
+
+GET {{AuthenticationController}}/me
+Authorization: Bearer {{BadToken}}
+
+###
+
+GET {{WeatherForecastController}}/auth
+
+###
+
+GET {{WeatherForecastController}}/auth
+Authorization: Bearer {{Token}}
+
+###
+
+GET {{WeatherForecastController}}/admin
+Authorization: Bearer {{Token}}
+
+###
+
+GET {{WeatherForecastController}}/kyiv
+Authorization: Bearer {{Token}}
+
+###
