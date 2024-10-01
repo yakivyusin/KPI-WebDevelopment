@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth-JWT-Controllers", "Aut
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth-JWT-Minimal", "Auth-JWT-Minimal\Auth-JWT-Minimal.csproj", "{56FC9FF7-B9A9-4E60-B0F1-8355059992FA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth-Cookie-Controllers", "Auth-Cookie-Controllers\Auth-Cookie-Controllers.csproj", "{9CEF8E2A-C096-496E-94EB-F7A876C5355B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth-Cookie-Minimal", "Auth-Cookie-Minimal\Auth-Cookie-Minimal.csproj", "{45B3BEAA-DA14-47A1-87C9-962E9E4860D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{56FC9FF7-B9A9-4E60-B0F1-8355059992FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56FC9FF7-B9A9-4E60-B0F1-8355059992FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56FC9FF7-B9A9-4E60-B0F1-8355059992FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CEF8E2A-C096-496E-94EB-F7A876C5355B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CEF8E2A-C096-496E-94EB-F7A876C5355B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CEF8E2A-C096-496E-94EB-F7A876C5355B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CEF8E2A-C096-496E-94EB-F7A876C5355B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B3BEAA-DA14-47A1-87C9-962E9E4860D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B3BEAA-DA14-47A1-87C9-962E9E4860D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B3BEAA-DA14-47A1-87C9-962E9E4860D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B3BEAA-DA14-47A1-87C9-962E9E4860D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

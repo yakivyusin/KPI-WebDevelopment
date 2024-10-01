@@ -1,0 +1,24 @@
+﻿@Auth_JWT_HostAddress = http://localhost:5042
+@AuthenticationGroup = {{Auth_JWT_HostAddress}}/authentication
+@WeatherForecastGroup = {{Auth_JWT_HostAddress}}/weatherforecast
+
+GET {{AuthenticationGroup}}/login?username=user&role=admin&city=Kyiv
+Accept: application/json
+
+###
+
+GET {{AuthenticationGroup}}/me
+
+###
+
+GET {{WeatherForecastGroup}}/auth
+
+###
+
+GET {{WeatherForecastGroup}}/admin
+
+###
+
+GET {{WeatherForecastGroup}}/kyiv
+
+###

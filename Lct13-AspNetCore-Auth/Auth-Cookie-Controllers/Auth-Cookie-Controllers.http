@@ -1,0 +1,24 @@
+﻿@Auth_JWT_HostAddress = http://localhost:5041
+@AuthenticationController = {{Auth_JWT_HostAddress}}/authentication
+@WeatherForecastController = {{Auth_JWT_HostAddress}}/weatherforecast
+
+GET {{AuthenticationController}}/login?username=user&role=admin&claims[city]=Kyiv
+Accept: application/json
+
+###
+
+GET {{AuthenticationController}}/me
+
+###
+
+GET {{WeatherForecastController}}/auth
+
+###
+
+GET {{WeatherForecastController}}/admin
+
+###
+
+GET {{WeatherForecastController}}/kyiv
+
+###
