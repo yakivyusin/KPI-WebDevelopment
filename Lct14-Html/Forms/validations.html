@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+    <title>HTML валідація</title>
+    <style>
+        body {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+        div {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="off">
+        <div>
+            <label for="tel">Валідація по регулярному виразу: </label><input type="tel" id="tel" name="tel" pattern="\+380\d{9}" />
+        </div>
+        <div>
+            <label for="email">Обов&apos;язкове: </label><input type="email" id="email" name="email" required />
+        </div>
+        <div>
+            <label for="checkbox">Обов&apos;язкове: </label><input type="checkbox" id="checkbox" name="checkbox" required />
+        </div>
+        <div>
+            <label for="text1">Мінімальна довжина 5: </label><input type="text" id="text1" name="text1" minlength="5" />
+        </div>
+        <div>
+            <label for="text2">Максимальна довжина 5: </label><input type="text" id="text2" name="text2" maxlength="5" />
+        </div>
+        <div>
+            <label for="text3">Combo: </label><input type="text" id="text3" name="text3" required pattern=".+ at kpi" maxlength="10" />
+        </div>
+        <button type="submit">Клац</button>
+    </form>
+</body>
+</html>
