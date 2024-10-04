@@ -9,6 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{FC7A6BB2
 		Forms\validations.html = Forms\validations.html
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HtmlElements", "HtmlElements", "{FC7A6BB2-EF4C-4D8B-BBDA-7CFE4B23371E}"
+	ProjectSection(SolutionItems) = preProject
+		HtmlElements\demo.html = HtmlElements\demo.html
+		HtmlElements\inline-text.html = HtmlElements\inline-text.html
+		HtmlElements\table.html = HtmlElements\table.html
+	EndProjectSection
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormEchoApp", "FormEchoApp\FormEchoApp.csproj", "{8CA8FC14-4AC0-49F6-9B77-1DC0DDF922AB}"
 EndProject
 Global
