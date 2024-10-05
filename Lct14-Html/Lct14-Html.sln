@@ -14,6 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HtmlElements", "HtmlElement
 		HtmlElements\demo.html = HtmlElements\demo.html
 		HtmlElements\inline-text.html = HtmlElements\inline-text.html
 		HtmlElements\table.html = HtmlElements\table.html
+		HtmlElements\media.html = HtmlElements\media.html
+		HtmlElements\block-text.html = HtmlElements\block-text.html
+		HtmlElements\body.html = HtmlElements\body.html
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormEchoApp", "FormEchoApp\FormEchoApp.csproj", "{8CA8FC14-4AC0-49F6-9B77-1DC0DDF922AB}"

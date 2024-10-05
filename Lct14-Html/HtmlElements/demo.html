@@ -13,7 +13,19 @@
             border: none;
         }
 
+        #body-radio:checked ~ #body {
+            display: block;
+        }
+
+        #block-text-radio:checked ~ #block-text {
+            display: block;
+        }
+
         #inline-text-radio:checked ~ #inline-text {
+            display: block;
+        }
+
+        #media-radio:checked ~ #media {
             display: block;
         }
 
@@ -23,9 +35,15 @@
     </style>
 </head>
 <body>
-    <input type="radio" id="inline-text-radio" name="mode" checked /><label for="inline-text-radio">Розмітка тексту</label>
+    <input type="radio" id="body-radio" name="mode" checked /><label for="body-radio">Групування вмісту</label>
+    <input type="radio" id="block-text-radio" name="mode" /><label for="block-text-radio">Текстовий вміст</label>
+    <input type="radio" id="inline-text-radio" name="mode" /><label for="inline-text-radio">Розмітка тексту</label>
+    <input type="radio" id="media-radio" name="mode" /><label for="media-radio">Мультимедіа</label>
     <input type="radio" id="table-radio" name="mode" /><label for="table-radio">Таблиці</label>
+    <iframe id="body" src="body.html"></iframe>
+    <iframe id="block-text" src="block-text.html"></iframe>
     <iframe id="inline-text" src="inline-text.html"></iframe>
+    <iframe id="media" src="media.html"></iframe>
     <iframe id="table" src="table.html"></iframe>
 </body>
 </html>
