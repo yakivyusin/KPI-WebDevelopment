@@ -1,4 +1,4 @@
-@Routing_Controllers_HostAddress = http://localhost:5091
+﻿@Routing_Controllers_HostAddress = http://localhost:5091
 
 GET {{Routing_Controllers_HostAddress}}/api/weatherforecast
 Accept: application/json
@@ -15,7 +15,7 @@ Accept: application/json
 
 ###
 
-GET {{Routing_Controllers_HostAddress}}/api/weather/get1
+GET {{Routing_Controllers_HostAddress}}/api/weather1111
 Accept: application/json
 
 ###

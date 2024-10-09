@@ -7,15 +7,14 @@ public class WeatherForecastStorage
 
     static WeatherForecastStorage()
     {
-        var now = DateTime.UtcNow;
-
-        Data.AddRange(Enumerable.Range(1, DateTime.DaysInMonth(now.Year, now.Month))
-            .Select(index => new WeatherForecast
-            {
-                Date = new(now.Year, now.Month, index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            }));
+        Data.AddRange(Enumerable.Range(1, 12)
+            .SelectMany(month => Enumerable.Range(1, DateTime.DaysInMonth(DateTime.UtcNow.Year, month))
+                .Select(day => new WeatherForecast
+                {
+                    Date = new(DateTime.UtcNow.Year, month, day),
+                    TemperatureC = Random.Shared.Next(-20, 55),
+                    Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                })));
     }
 
     public IEnumerable<WeatherForecast> GetAll() => Data.OrderBy(x => x.Date);
