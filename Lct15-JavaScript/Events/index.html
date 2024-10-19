@@ -1,0 +1,40 @@
+﻿<html>
+<head>
+    <style>
+        body {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Обробник кліку з атрибута (вбудований код):</td>
+            <td><button onclick="alert('Hello World!');">Клік-с</button></td>
+        </tr>
+        <tr>
+            <td>Обробник подвійного кліку з атрибута (код із файлу):</td>
+            <td><button ondblclick="attributeDoubleClick();">Клік-с</button></td>
+        </tr>
+        <tr>
+            <td>Обробник перетаскування із властивості:</td>
+            <td><button id="drag-event-button" draggable="true">Драг-с</button></td>
+        </tr>
+        <tr>
+            <td>Обробник наведення через addEventListener:</td>
+            <td><button id="mouseover-event-button">Овер-с</button></td>
+        </tr>
+        <tr>
+            <td>Робота з об&apos;єктом Event:</td>
+            <td><a id="google-link" href="https://google.com">Клік-с</a></td>
+        </tr>
+        <tr id="bubble-row">
+            <td>Event bubbling:</td>
+            <td id="bubble-cell"><button id="bubble-button">Клік-с</button></td>
+        </tr>
+    </table>
+    <pre id="bubble-output"></pre>
+    <script src="app.js"></script>
+</body>
+</html>

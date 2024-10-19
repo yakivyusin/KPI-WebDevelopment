@@ -9,6 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FetchApi", "FetchApi", "{FC
 		FetchApi\app.js = FetchApi\app.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{FC7A6BB2-EF4C-4D8B-BBDA-7CFE4B2337AF}"
+	ProjectSection(SolutionItems) = preProject
+		Events\index.html = Events\index.html
+		Events\app.js = Events\app.js
+	EndProjectSection
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecastWebApp", "WeatherForecastWebApp\WeatherForecastWebApp.csproj", "{4FD1353A-79BB-45A7-AD8D-DCC2A1752422}"
 EndProject
 Global
