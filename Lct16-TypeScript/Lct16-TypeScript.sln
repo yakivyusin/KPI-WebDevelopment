@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "NodeConsoleApp", "NodeConsoleApp\NodeConsoleApp.esproj", "{8BD5CEA3-3990-43C8-9EB2-10A8AB4E4D06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplication\WebApplication.csproj", "{88227946-7D8F-41BD-835C-ADE74E7DC8D9}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BD5CEA3-3990-43C8-9EB2-10A8AB4E4D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD5CEA3-3990-43C8-9EB2-10A8AB4E4D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD5CEA3-3990-43C8-9EB2-10A8AB4E4D06}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8BD5CEA3-3990-43C8-9EB2-10A8AB4E4D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD5CEA3-3990-43C8-9EB2-10A8AB4E4D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD5CEA3-3990-43C8-9EB2-10A8AB4E4D06}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{88227946-7D8F-41BD-835C-ADE74E7DC8D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88227946-7D8F-41BD-835C-ADE74E7DC8D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88227946-7D8F-41BD-835C-ADE74E7DC8D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88227946-7D8F-41BD-835C-ADE74E7DC8D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
