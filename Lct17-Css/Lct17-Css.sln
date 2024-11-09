@@ -9,6 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SelectorsCombinators", "Sel
 		SelectorsCombinators\app.js = SelectorsCombinators\app.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BoxModel", "BoxModel", "{AA8C8AA2-EF4C-4D8B-BBDA-7CFE4B23370B}"
+	ProjectSection(SolutionItems) = preProject
+		BoxModel\index.html = BoxModel\index.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
