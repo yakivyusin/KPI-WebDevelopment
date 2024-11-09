@@ -1,0 +1,157 @@
+﻿<html>
+<head>
+    <title>Пісочниця для CSS селекторів та комбінаторів</title>
+    <style id="dynamic-stylesheet">
+    </style>
+    <style>
+        body {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+        label, textarea {
+            display: block;
+            width: 100%;
+        }
+
+        pre {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label>CSS:</label>
+        <textarea id="stylesheet-enter" rows="10"></textarea>
+    </div>
+    <hr />
+    <div>
+        <p id="p1">Абзац з id p1.</p>
+        <p class="class1">Абзац з класом class1.</p>
+        <p class="class1 class2">Абзац з класами class1 та class2.</p>
+        <p>Просто абзац.</p>
+        <p name="p1">Абзац з атрибутом name рівним p1.</p>
+    </div>
+    <hr />
+    <p>Спробуй наступні стилі:</p>
+    <pre>
+* {
+  background-color: red;
+}</pre>
+    <pre>
+p {
+  color: red;
+}</pre>
+    <pre>
+.class1 {
+  font-size: 24px;
+}</pre>
+    <pre>
+.class1.class2 {
+  font-size: 24px;
+}</pre>
+    <pre>
+#p1 {
+  background-color: #ff0000;
+}</pre>
+    <pre>
+[class] {
+  font-size: 2rem;
+}</pre>
+    <pre>
+[name=p1] {
+  font-size: 16pt;
+}</pre>
+    <pre>
+[class~=class2] {
+  font-size: calc(16px + 0.25rem);
+}</pre>
+    <pre>
+[name^=p] {
+  color: rgba(0, 255, 0, 0.5);
+}</pre>
+    <pre>
+[name$='1'] {
+  color: rgba(0, 0, 0, 0.5);
+}</pre>
+    <pre>
+[class*=as] {
+  color: hsl(120, 60%, 70%);
+}</pre>
+    <pre>
+p:first-child, label:first-child {
+  text-align: center;
+}</pre>
+    <pre>
+:focus {
+  background-color: green;
+}</pre>
+    <pre>
+.class1:not(.class2) {
+  font-family: "Comic Sans MS";
+}</pre>
+    <pre>
+div:has(p) {
+  border: 2px solid rgb(0, 255, 0);
+}</pre>
+    <pre>
+p::first-letter {
+  background-color: yellow;
+}</pre>
+    <pre>
+p::first-line {
+  letter-spacing: 4px;
+  word-spacing: 4px;
+}</pre>
+    <pre>
+div > p {
+  font-weight: bold;
+}</pre>
+    <pre>
+body p {
+  font-style: italic;
+}</pre>
+    <pre>
+#p1 + p {
+  text-transform: uppercase;
+}</pre>
+    <pre>
+#p1 ~ p {
+  text-decoration: underline;
+}</pre>
+    <pre>
+p {
+  text-transform: uppercase;
+}
+
+#p1 {
+  text-transform: lowercase;
+}</pre>
+    <pre>
+.class1 {
+  text-decoration: underline;
+}
+
+.class1.class2 {
+  text-decoration: underline overline;
+}</pre>
+    <pre>
+.class1 {
+  text-emphasis: filled circle;
+}
+
+.class2 {
+  text-emphasis: filled double-circle;
+}</pre>
+    <pre>
+.class2 {
+  text-emphasis: filled double-circle;
+}
+
+.class1 {
+  text-emphasis: filled circle;
+}</pre>
+    <script src="app.js"></script>
+</body>
+</html>
