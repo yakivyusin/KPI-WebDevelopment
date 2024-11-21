@@ -20,7 +20,7 @@ public class Program
 
         var app = builder.Build();
 
-        app.UseAuthorization();
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.MapControllers();

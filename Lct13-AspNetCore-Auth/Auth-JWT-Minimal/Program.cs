@@ -66,9 +66,9 @@ public class Program
         {
             return user.Identities.Select(x => new
             {
-                AuthType = x.AuthenticationType,
-                IsAuthentication = x.IsAuthenticated,
-                Name = x.Name,
+                x.AuthenticationType,
+                x.IsAuthenticated,
+                x.Name,
                 Claims = x.Claims.Select(c => new
                 {
                     c.Type,
