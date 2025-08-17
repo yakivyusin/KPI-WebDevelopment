@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MPA_ModelViewController.Models;
 using System.Diagnostics;
 
