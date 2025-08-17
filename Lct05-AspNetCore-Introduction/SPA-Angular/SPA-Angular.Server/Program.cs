@@ -1,4 +1,4 @@
-namespace SPA_Angular.Server;
+﻿namespace SPA_Angular.Server;
 
 public class Program
 {
@@ -13,7 +13,7 @@ public class Program
         var app = builder.Build();
 
         app.UseDefaultFiles();
-        app.UseStaticFiles();
+        app.MapStaticAssets();
 
         // Configure the HTTP request pipeline.
 
