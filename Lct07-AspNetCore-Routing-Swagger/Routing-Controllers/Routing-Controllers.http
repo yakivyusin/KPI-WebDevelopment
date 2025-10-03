@@ -25,17 +25,17 @@ Accept: application/json
 
 ###
 
-GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2024-09-01
+GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2025-09-01
 Accept: application/json
 
 ###
 
-GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2024/9/1
+GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2025/9/1
 Accept: application/json
 
 ###
 
-GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2024/9
+GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2025/9
 Accept: application/json
 
 ###
@@ -45,7 +45,7 @@ Accept: application/json
 
 ###
 
-GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2024/abc/1
+GET {{Routing_Controllers_HostAddress}}/api/weatherforecast/2025/abc/1
 Accept: application/json
 
 ###
