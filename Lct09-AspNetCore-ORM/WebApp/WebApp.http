@@ -23,5 +23,21 @@ Accept: application/json
 
 ###
 
+PUT {{WebApp_HostAddress}}/api/weather/2024-01-01/summary
+Accept: application/json
+Content-Type: application/json
+
+"Hot"
+
+###
+
+PUT {{WebApp_HostAddress}}/api/weather/2024-01-01
+Accept: application/json
+Content-Type: application/json
+
+{"Date":"2024-01-01", "TemperatureC": -273, "Summary": "Cold"}
+
+###
+
 DELETE {{WebApp_HostAddress}}/api/weather/2024-01-01
 Accept: application/json

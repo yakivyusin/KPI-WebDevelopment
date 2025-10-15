@@ -19,7 +19,7 @@ public class WeatherForecastController : ControllerBase
 
     [HttpGet("{date}")]
     public async Task<WeatherForecast?> Get(DateTime date) => await _context.Set<WeatherForecast>()
-        .FindAsync(DateOnly.FromDateTime(date));
+        .FirstOrDefaultAsync(x => x.Date == DateOnly.FromDateTime(date));
 
     [HttpPost]
     public async Task<IActionResult> Post(WeatherForecast forecast)
@@ -30,14 +30,30 @@ public class WeatherForecastController : ControllerBase
         return CreatedAtAction(nameof(Get), forecast);
     }
 
-    [HttpDelete]
-    public async Task Delete() => await _context.Set<WeatherForecast>().ExecuteDeleteAsync();
+    [HttpPut("{date}/summary")]
+    public async Task UpdateSummary(DateTime date, [FromBody] string summary)
+    {
+        var entity = _context.Set<WeatherForecast>().Find(DateOnly.FromDateTime(date));
+
+        if (entity != null)
+        {
+            entity.Summary = summary;
+            await _context.SaveChangesAsync();
+        }
+    }
+
+    [HttpPut("{date}")]
+    public async Task Update(DateTime date, [FromBody] WeatherForecast entity)
+    {
+        entity.Date = DateOnly.FromDateTime(date);
+        _context.Set<WeatherForecast>().Update(entity);
+        await _context.SaveChangesAsync();
+    }
 
     [HttpDelete("{date}")]
     public async Task Delete(DateTime date)
     {
-        var entity = await _context.Set<WeatherForecast>()
-            .FindAsync(DateOnly.FromDateTime(date));
+        var entity = await _context.Set<WeatherForecast>().FindAsync(DateOnly.FromDateTime(date));
 
         if (entity != null)
         {
@@ -45,4 +61,7 @@ public class WeatherForecastController : ControllerBase
             await _context.SaveChangesAsync();
         }
     }
+
+    [HttpDelete]
+    public async Task Delete() => await _context.Set<WeatherForecast>().ExecuteDeleteAsync();
 }
