@@ -13,7 +13,10 @@ public class AuthenticationController : ControllerBase
     public Task Login(string username, string role, [FromQuery] Dictionary<string, string> claims)
     {
         var claimsIdentity = new ClaimsIdentity(
-            (claims ?? []).Select(x => new Claim(x.Key, x.Value)).Prepend(new(ClaimTypes.Role, role)).Prepend(new(ClaimTypes.Name, username)),
+            (claims ?? [])
+                .Select(x => new Claim(x.Key, x.Value))
+                .Prepend(new(ClaimTypes.Role, role))
+                .Prepend(new(ClaimTypes.Name, username)),
             CookieAuthenticationDefaults.AuthenticationScheme);
         var authProperties = new AuthenticationProperties();
 

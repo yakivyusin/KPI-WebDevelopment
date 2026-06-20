@@ -19,7 +19,8 @@ public class AuthenticationController : ControllerBase
         var token = new JwtSecurityToken(
             issuer: "weatherforecast@kpi.ua",
             audience: audience,
-            claims: (claims ?? []).Select(x => new Claim(x.Key, x.Value))
+            claims: (claims ?? [])
+                .Select(x => new Claim(x.Key, x.Value))
                 .Prepend(new(JwtRegisteredClaimNames.Sub, username))
                 .Prepend(new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()))
                 .Prepend(new(ClaimTypes.Role, role)),
