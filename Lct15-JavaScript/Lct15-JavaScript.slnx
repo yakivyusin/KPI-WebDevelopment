@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Dom/">
+    <File Path="Dom/app.js" />
+    <File Path="Dom/index.html" />
+  </Folder>
+  <Folder Name="/Events/">
+    <File Path="Events/app.js" />
+    <File Path="Events/index.html" />
+  </Folder>
+  <Folder Name="/FetchApi/">
+    <File Path="FetchApi/app.js" />
+    <File Path="FetchApi/index.html" />
+  </Folder>
+  <Project Path="WeatherForecastWebApp/WeatherForecastWebApp.csproj" />
+</Solution>

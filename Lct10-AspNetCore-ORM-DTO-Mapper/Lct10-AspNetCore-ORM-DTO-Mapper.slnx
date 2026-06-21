@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="DataModel/DataModel.csproj" />
+  <Project Path="Inheritance-TPC/Inheritance-TPC.csproj" />
+  <Project Path="Inheritance-TPH/Inheritance-TPH.csproj" />
+  <Project Path="Inheritance-TPT/Inheritance-TPT.csproj" />
+  <Project Path="WebApp/WebApp.csproj" />
+</Solution>

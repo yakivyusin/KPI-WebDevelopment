@@ -1,0 +1,13 @@
+<Solution>
+  <Project Path="Common-DataAnnotations/Common-DataAnnotations.csproj" />
+  <Project Path="Common-FluentValidation/Common-FluentValidation.csproj" />
+  <Project Path="Common-WeatherForecast/Common-WeatherForecast.csproj" />
+  <Project Path="DataAnnotations-Controllers/DataAnnotations-Controllers.csproj" />
+  <Project Path="DataAnnotations-Minimal/DataAnnotations-Minimal.csproj" />
+  <Project Path="DataBinding-Controllers/DataBinding-Controllers.csproj" />
+  <Project Path="DataBinding-Minimal/DataBinding-Minimal.csproj" />
+  <Project Path="FluentValidation-Controllers/FluentValidation-Controllers.csproj" />
+  <Project Path="FluentValidation-Minimal/FluentValidation-Minimal.csproj" />
+  <Project Path="HttpContext-Controllers/HttpContext-Controllers.csproj" />
+  <Project Path="HttpContext-Minimal/HttpContext-Minimal.csproj" />
+</Solution>

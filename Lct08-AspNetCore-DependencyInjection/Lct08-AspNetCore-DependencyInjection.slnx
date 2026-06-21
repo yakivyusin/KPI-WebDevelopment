@@ -1,0 +1,31 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Debug-BP" />
+    <BuildType Name="Debug-Simple" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Project Path="Autofac-WebApp/Autofac-WebApp.csproj">
+    <BuildType Solution="Debug-BP|*" Project="Debug" />
+    <BuildType Solution="Debug-Simple|*" Project="Debug" />
+  </Project>
+  <Project Path="Common-WeatherForecast-BP/Common-WeatherForecast-BP.csproj">
+    <BuildType Solution="Debug-BP|*" Project="Debug" />
+    <BuildType Solution="Debug-Simple|*" Project="Debug" />
+  </Project>
+  <Project Path="Common-WeatherForecast-Simple/Common-WeatherForecast-Simple.csproj">
+    <BuildType Solution="Debug-BP|*" Project="Debug" />
+    <BuildType Solution="Debug-Simple|*" Project="Debug" />
+  </Project>
+  <Project Path="Keyed-WebApp/Keyed-WebApp.csproj">
+    <BuildType Solution="Debug-BP|*" Project="Debug" />
+    <BuildType Solution="Debug-Simple|*" Project="Debug" />
+  </Project>
+  <Project Path="Standard-LifeCyclePlayground/Standard-LifeCyclePlayground.csproj">
+    <BuildType Solution="Debug-BP|*" Project="Debug" />
+    <BuildType Solution="Debug-Simple|*" Project="Debug" />
+  </Project>
+  <Project Path="Standard-WebApp/Standard-WebApp.csproj">
+    <BuildType Solution="Debug|*" Project="Debug-Simple" />
+  </Project>
+</Solution>

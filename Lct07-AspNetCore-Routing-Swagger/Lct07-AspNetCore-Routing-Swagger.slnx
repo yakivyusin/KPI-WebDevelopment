@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Common-WeatherForecast/Common-WeatherForecast.csproj" />
+  <Project Path="Routing-Controllers/Routing-Controllers.csproj" />
+  <Project Path="Routing-Minimal/Routing-Minimal.csproj" />
+  <Project Path="Swagger-Controllers/Swagger-Controllers.csproj" />
+  <Project Path="Swagger-Minimal/Swagger-Minimal.csproj" />
+</Solution>

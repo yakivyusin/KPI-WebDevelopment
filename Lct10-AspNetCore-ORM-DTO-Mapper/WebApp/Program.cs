@@ -12,7 +12,7 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         builder.Services.AddControllers();
-        builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+        builder.Services.AddAutoMapper(cfg => { }, Assembly.GetExecutingAssembly());
         builder.Services.AddDbContext<DataModelContext>(contextOptions =>
             contextOptions.UseSqlite("Data Source=sample.db"));
         builder.Services.AddRepositories();

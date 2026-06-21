@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="WebApp-Logging/WebApp-Logging.csproj" />
+  <Project Path="WebApp-Metrics/WebApp-Metrics.csproj" />
+  <Project Path="WebApp-Serilog/WebApp-Serilog.csproj" />
+</Solution>

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="NodeConsoleApp/NodeConsoleApp.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="WebApplication/WebApplication.csproj" />
+</Solution>

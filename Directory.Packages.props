@@ -4,26 +4,25 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="System.Linq.Async" Version="6.0.3" />
-	<PackageVersion Include="Microsoft.AspNetCore.SpaProxy" Version="9.0.6" />
-	<PackageVersion Include="FluentValidation" Version="12.0.0" />
-	<PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
-	<PackageVersion Include="SharpGrip.FluentValidation.AutoValidation.Mvc" Version="1.5.0" />
-	<PackageVersion Include="SharpGrip.FluentValidation.AutoValidation.Endpoints" Version="1.5.0" />
-	<PackageVersion Include="Swashbuckle.AspNetCore" Version="9.0.1" />
-	<PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="9.0.6" />
-	<PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.6" />
-	<PackageVersion Include="Autofac.Extensions.DependencyInjection" Version="10.0.0" />
-	<PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.6" />
-	<PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.6" />
-	<PackageVersion Include="AutoMapper" Version="14.0.0" />
-	<PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="9.0.6" />
-	<PackageVersion Include="System.Diagnostics.DiagnosticSource" Version="9.0.6" />
-	<PackageVersion Include="Serilog.AspNetCore" Version="9.0.0" />
+	<PackageVersion Include="Microsoft.AspNetCore.SpaProxy" Version="10.0.9" />
+	<PackageVersion Include="FluentValidation" Version="12.1.1" />
+	<PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+	<PackageVersion Include="SharpGrip.FluentValidation.AutoValidation.Mvc" Version="2.0.0" />
+	<PackageVersion Include="SharpGrip.FluentValidation.AutoValidation.Endpoints" Version="2.0.0" />
+	<PackageVersion Include="Swashbuckle.AspNetCore" Version="10.2.2" />
+	<PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.9" />
+	<PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.9" />
+	<PackageVersion Include="Autofac.Extensions.DependencyInjection" Version="11.0.1" />
+	<PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.9" />
+	<PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.9" />
+	<PackageVersion Include="AutoMapper" Version="16.1.1" />
+	<PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="10.0.9" />
+	<PackageVersion Include="System.Diagnostics.DiagnosticSource" Version="10.0.9" />
+	<PackageVersion Include="Serilog.AspNetCore" Version="10.0.0" />
 	<PackageVersion Include="Serilog.Enrichers.Environment" Version="3.0.1" />
 	<PackageVersion Include="Serilog.Enrichers.Thread" Version="4.0.0" />
 	<PackageVersion Include="Serilog.Sinks.File" Version="7.0.0" />
-	<PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.6" />
-	<PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.6" />
+	<PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.9" />
+	<PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.9" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,18 @@
+<Solution>
+  <Project Path="AsyncStreams/AsyncStreams.csproj" />
+  <Project Path="Cancellation-Manual/Cancellation-Manual.csproj" />
+  <Project Path="Cancellation-Timeout/Cancellation-Timeout.csproj" />
+  <Project Path="Cooking-Async/Cooking-Async.csproj" />
+  <Project Path="Cooking-Sync/Cooking-Sync.csproj" />
+  <Project Path="JS-Await/JS-Await.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="JS-Promises/JS-Promises.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="ProgressReporting/ProgressReporting.csproj" />
+  <Project Path="Tasks-Await/Tasks-Await.csproj" />
+  <Project Path="Tasks-NoAwait/Tasks-NoAwait.csproj" />
+</Solution>

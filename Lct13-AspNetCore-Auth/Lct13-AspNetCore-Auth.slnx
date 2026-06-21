@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Auth-Cookie-Controllers/Auth-Cookie-Controllers.csproj" />
+  <Project Path="Auth-Cookie-Minimal/Auth-Cookie-Minimal.csproj" />
+  <Project Path="Auth-JWT-Controllers/Auth-JWT-Controllers.csproj" />
+  <Project Path="Auth-JWT-Minimal/Auth-JWT-Minimal.csproj" />
+  <Project Path="Identity-DataModel/Identity-DataModel.csproj" />
+  <Project Path="Identity-WebApp/Identity-WebApp.csproj" />
+</Solution>

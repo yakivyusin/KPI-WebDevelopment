@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="MPA-ModelViewController/MPA-ModelViewController.csproj" />
+  <Project Path="MPA-RazorPages/MPA-RazorPages.csproj" />
+  <Project Path="SPA-Angular/spa-angular.client/spa-angular.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="SPA-Angular/SPA-Angular.Server/SPA-Angular.Server.csproj" />
+  <Project Path="WebApi-Controllers/WebApi-Controllers.csproj" />
+  <Project Path="WebApi-Minimal/WebApi-Minimal.csproj" />
+</Solution>

@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Forms/">
+    <File Path="Forms/inputs.html" />
+    <File Path="Forms/validations.html" />
+  </Folder>
+  <Folder Name="/HtmlElements/">
+    <File Path="HtmlElements/block-text.html" />
+    <File Path="HtmlElements/body.html" />
+    <File Path="HtmlElements/demo.html" />
+    <File Path="HtmlElements/inline-text.html" />
+    <File Path="HtmlElements/media.html" />
+    <File Path="HtmlElements/table.html" />
+  </Folder>
+  <Project Path="FormEchoApp/FormEchoApp.csproj" />
+</Solution>

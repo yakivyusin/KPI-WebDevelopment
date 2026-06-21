@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-      <RootNamespace>Cancellation_Timeout</RootNamespace>
+    <RootNamespace>Cancellation_Timeout</RootNamespace>
   </PropertyGroup>
 
 </Project>

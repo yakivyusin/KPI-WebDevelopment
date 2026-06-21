@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Caching-Data/Caching-Data.csproj" />
+  <Project Path="Caching-Output/Caching-Output.csproj" />
+  <Project Path="Caching-Response/Caching-Response.csproj" />
+  <Project Path="IConfiguration/IConfiguration.csproj" />
+  <Project Path="Options-Basic/Options-Basic.csproj" />
+  <Project Path="Options-Extra/Options-Extra.csproj" />
+</Solution>

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DataModel-DataAnnotations/DataModel-DataAnnotations.csproj" />
+  <Project Path="DataModel-Fluent/DataModel-Fluent.csproj" />
+  <Project Path="WebApp/WebApp.csproj" />
+</Solution>

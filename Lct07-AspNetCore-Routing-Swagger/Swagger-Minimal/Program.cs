@@ -1,5 +1,5 @@
-using Common_WeatherForecast;
-using Microsoft.OpenApi.Models;
+﻿using Common_WeatherForecast;
+using Microsoft.OpenApi;
 
 namespace Swagger_Minimal;
 
