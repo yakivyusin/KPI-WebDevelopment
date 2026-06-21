@@ -29,6 +29,10 @@ public class Program
         MapAuthGroup(app.MapGroup("/authentication"));
         MapWeatherForecastGroup(app.MapGroup("/weatherforecast"));
 
+#if false
+        AppContext.SetSwitch("Microsoft.AspNetCore.Authentication.Cookies.IgnoreRedirectMetadata", true);
+#endif
+
         app.Run();
     }
 

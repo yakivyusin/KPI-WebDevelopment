@@ -25,6 +25,10 @@ public class Program
 
         app.MapControllers();
 
+#if false
+        AppContext.SetSwitch("Microsoft.AspNetCore.Authentication.Cookies.IgnoreRedirectMetadata", true);
+#endif
+
         app.Run();
     }
 }
