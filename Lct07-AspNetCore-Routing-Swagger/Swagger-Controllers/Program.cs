@@ -1,5 +1,4 @@
 ﻿using Microsoft.OpenApi;
-using System.Reflection;
 
 namespace Swagger_Controllers;
 
@@ -10,24 +9,30 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         builder.Services.AddControllers();
-        builder.Services.AddSwaggerGen(options =>
+        builder.Services.AddOpenApi(options =>
         {
-            options.SwaggerDoc("v1", new OpenApiInfo
+            options.AddDocumentTransformer((document, _, _) =>
             {
-                Version = "v1",
-                Title = "Weather Forecast API",
-                Description = "An ASP.NET Core Web API for managing weather forecasts"
-            });
+                document.Info = new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Weather Forecast API",
+                    Description = "An ASP.NET Core Web API for managing weather forecasts"
+                };
 
-            options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"{Assembly.GetExecutingAssembly().GetName().Name}.xml"));
+                return Task.CompletedTask;
+            });
         });
 
         var app = builder.Build();
 
         if (app.Environment.IsDevelopment())
         {
-            app.UseSwagger();
-            app.UseSwaggerUI();
+            app.MapOpenApi();
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/openapi/v1.json", "v1");
+            });
         }
 
         app.MapControllers();

@@ -9,14 +9,18 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen(options =>
+        builder.Services.AddOpenApi(options =>
         {
-            options.SwaggerDoc("v1", new OpenApiInfo
+            options.AddDocumentTransformer((document, _, _) =>
             {
-                Version = "v1",
-                Title = "Weather Forecast API",
-                Description = "An ASP.NET Core Minimal API for managing weather forecasts"
+                document.Info = new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Weather Forecast API",
+                    Description = "An ASP.NET Core Web API for managing weather forecasts"
+                };
+
+                return Task.CompletedTask;
             });
         });
 
@@ -24,8 +28,11 @@ public class Program
 
         if (app.Environment.IsDevelopment())
         {
-            app.UseSwagger();
-            app.UseSwaggerUI();
+            app.MapOpenApi();
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/openapi/v1.json", "v1");
+            });
         }
 
         MapWeatherForecasts(app.MapGroup("api/weatherforecasts"));
@@ -38,12 +45,12 @@ public class Program
         group.MapGet("/", (int page = 1, int pageSize = 10) => new WeatherForecastStorage().GetAll().Skip(pageSize * (page - 1)).Take(pageSize))
             .WithName("GetAllWeatherForecasts")
             .WithSummary("Returns all weather forecasts.")
-            .WithOpenApi(operation =>
+            .AddOpenApiOperationTransformer((operation, _, _) =>
             {
                 operation.Parameters[0].Description = "The current page number.";
                 operation.Parameters[1].Description = "The desired page size.";
 
-                return operation;
+                return Task.CompletedTask;
             });
 
         group.MapGet("/{date}", (DateTime date) =>
