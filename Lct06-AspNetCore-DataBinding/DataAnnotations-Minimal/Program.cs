@@ -1,4 +1,4 @@
-using Common_DataAnnotations;
+﻿using Common_DataAnnotations;
 
 namespace DataAnnotations_Minimal;
 
@@ -8,12 +8,14 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        builder.Services.AddValidation();
+
         var app = builder.Build();
 
         app.MapPost("/weatherforecast", (WeatherForecast weatherForecast) =>
         {
             return Results.Created();
-        }).Validate<WeatherForecast>();
+        });
 
         app.Run();
     }
