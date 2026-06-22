@@ -1,7 +1,4 @@
 <Solution>
-  <Folder Name="/BoxModel/">
-    <File Path="BoxModel/index.html" />
-  </Folder>
   <Folder Name="/SelectorsCombinators/">
     <File Path="SelectorsCombinators/app.js" />
     <File Path="SelectorsCombinators/index.html" />

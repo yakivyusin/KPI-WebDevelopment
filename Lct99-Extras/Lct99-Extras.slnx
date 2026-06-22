@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="AsyncStreams/AsyncStreams.csproj" />
+  <Project Path="ProgressReporting/ProgressReporting.csproj" />
+  <Project Path="Autofac-WebApp/Autofac-WebApp.csproj" />
+  <Project Path="Options-Extra/Options-Extra.csproj" />
+  <Folder Name="/BoxModel/">
+    <File Path="BoxModel/index.html" />
+  </Folder>
+</Solution>

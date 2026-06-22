@@ -5,10 +5,6 @@
     <BuildType Name="Debug-Simple" />
     <BuildType Name="Release" />
   </Configurations>
-  <Project Path="Autofac-WebApp/Autofac-WebApp.csproj">
-    <BuildType Solution="Debug-BP|*" Project="Debug" />
-    <BuildType Solution="Debug-Simple|*" Project="Debug" />
-  </Project>
   <Project Path="Common-WeatherForecast-BP/Common-WeatherForecast-BP.csproj">
     <BuildType Solution="Debug-BP|*" Project="Debug" />
     <BuildType Solution="Debug-Simple|*" Project="Debug" />

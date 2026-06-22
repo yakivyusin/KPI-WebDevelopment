@@ -1,5 +1,4 @@
 <Solution>
-  <Project Path="AsyncStreams/AsyncStreams.csproj" />
   <Project Path="Cancellation-Manual/Cancellation-Manual.csproj" />
   <Project Path="Cancellation-Timeout/Cancellation-Timeout.csproj" />
   <Project Path="Cooking-Async/Cooking-Async.csproj" />
@@ -12,7 +11,6 @@
     <Build />
     <Deploy />
   </Project>
-  <Project Path="ProgressReporting/ProgressReporting.csproj" />
   <Project Path="Tasks-Await/Tasks-Await.csproj" />
   <Project Path="Tasks-NoAwait/Tasks-NoAwait.csproj" />
 </Solution>
