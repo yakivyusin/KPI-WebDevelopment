@@ -12,13 +12,10 @@ public class WeatherForecastValidator : AbstractValidator<WeatherForecast>
         RuleFor(x => x.Summary).Length(0, 10).NotEqual("qwerty");
 
 #if false
-        RuleFor(x => x.Summary).Must(x => x?.StartsWith('q') ?? true);
+        RuleFor(x => x.Summary).Must(x => x?.StartsWith('q') ?? true).WithMessage("{PropertyName} must start with 'q'.");
 #endif
 #if false
         RuleFor(x => x.Summary).StartsWith("q");
-#endif
-#if false
-        RuleFor(x => x.Summary).StartsEndsWith("q", "y");
 #endif
     }
 }

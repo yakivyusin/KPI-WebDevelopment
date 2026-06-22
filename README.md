@@ -11,6 +11,7 @@ flowchart TD
 
     Lct04 --> Lct99/ProgressReporting
     Lct04 --> Lct99/AsyncStreams
+    Lct06 --> Lct99/CustomFluentValidations
     Lct08 --> Lct99/Autofac-WebApp
     Lct11 --> Lct99/Options-Extra
     Lct17 --> Lct99/BoxModel

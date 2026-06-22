@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Lct06-AspNetCore-DataBinding\Common-WeatherForecast\Common-WeatherForecast.csproj" />
+  </ItemGroup>
+
+</Project>
